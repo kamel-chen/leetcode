@@ -12,16 +12,16 @@ package pkg
 // IsIsomorphic is isomorphic
 func IsIsomorphic(s string, t string) bool {
 	memo := make(map[byte]byte)
+    kmemo := make(map[byte]byte)
 
 	for i := 0; i < len(s); i++ {
 		if memo[s[i]] == 0 {
-			for _, v := range memo {
-				if v == t[i] {
-					return false
-				}
-			}
+            if kmemo[t[i]] == 1 {
+                return false
+            }
 
 			memo[s[i]] = t[i]
+            kmemo[t[i]] = 1
 			continue
 		}
 
