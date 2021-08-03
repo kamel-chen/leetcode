@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"leetcode/array/pkg"
 )
 
@@ -21,12 +22,16 @@ func main() {
 	// s := pkg.Constructor(e)
 	// fmt.Println(s.Shuffle())
 
-	n1 := []*pkg.ListNode{
-		{ Val: 1, Next: &pkg.ListNode{ Val: 4, Next: &pkg.ListNode{ Val: 5, Next: nil }}},
-		{ Val: 1, Next: &pkg.ListNode{ Val: 3, Next: &pkg.ListNode{ Val: 4, Next: nil }}},
-		nil, nil,
-		{ Val: 2, Next: &pkg.ListNode{ Val: 6, Next: nil }},	
-	}
-	n := pkg.MergeKLists(n1)
-	pkg.PrintNode(n)
+	// n1 := []*pkg.ListNode{
+	// 	{ Val: 1, Next: &pkg.ListNode{ Val: 4, Next: &pkg.ListNode{ Val: 5, Next: nil }}},
+	// 	{ Val: 1, Next: &pkg.ListNode{ Val: 3, Next: &pkg.ListNode{ Val: 4, Next: nil }}},
+	// 	nil, nil,
+	// 	{ Val: 2, Next: &pkg.ListNode{ Val: 6, Next: nil }},
+	// }
+	// n := pkg.MergeKLists(n1)
+	// pkg.PrintNode(n)
+
+	f := []int{1, 3, 4, 2}
+	target := 6
+	fmt.Println(pkg.TwoSum(f, target))
 }
