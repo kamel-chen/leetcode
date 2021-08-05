@@ -31,7 +31,11 @@ func main() {
 	// n := pkg.MergeKLists(n1)
 	// pkg.PrintNode(n)
 
-	f := []int{1, 3, 4, 2}
-	target := 6
-	fmt.Println(pkg.TwoSum(f, target))
+	// f := []int{1, 3, 4, 2}
+	// target := 6
+	// fmt.Println(pkg.TwoSum(f, target))
+
+	g := []int{9, 0, 3, 5, 7}
+	fmt.Println(pkg.Subsets(g))
+
 }
