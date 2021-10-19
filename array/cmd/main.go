@@ -35,7 +35,11 @@ func main() {
 	// target := 6
 	// fmt.Println(pkg.TwoSum(f, target))
 
-	g := []int{9, 0, 3, 5, 7}
-	fmt.Println(pkg.Subsets(g))
+	// g := []int{9, 0, 3, 5, 7}
+	// fmt.Println(pkg.Subsets(g))
+	
+	// h := []int{0,1,1}
+	h:= []int{0,0,1,1,1,2,2,3,3,4}
+	fmt.Println(pkg.RemoveDuplicates(h), h)
 
 }
