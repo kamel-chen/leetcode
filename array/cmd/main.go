@@ -39,7 +39,10 @@ func main() {
 	// fmt.Println(pkg.Subsets(g))
 	
 	// h := []int{0,1,1}
-	h:= []int{0,0,1,1,1,2,2,3,3,4}
-	fmt.Println(pkg.RemoveDuplicates(h), h)
+	// h:= []int{0,0,1,1,1,2,2,3,3,4}
+	// fmt.Println(pkg.RemoveDuplicates(h), h)
+
+	i := []int{7,6,4,3,1}
+	fmt.Println(pkg.MaxProfit(i))
 
 }
